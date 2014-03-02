@@ -1,0 +1,50 @@
+<loading></loading>
+
+<!-- search box -->
+<div class="searchbox text-center">
+	<div class="container">
+		<span class="glyphicon glyphicon-search"></span> <input type="text"
+			placeholder="Search by Name" ng-model="search.name" />
+	</div>
+</div>
+
+<!-- datatable -->
+<div class="container">
+	<div class=" panel panel-default result">
+		<div class="panel-heading">
+			<h3 class="panel-title">tmg telegraaf media groep - Users list</h3>
+		</div>
+		<div class="panel-body table-responsive text-center">
+			<table class="table table-condensed table-hover"
+				ng-show="users.list.length">
+				<thead>
+					<tr>
+						<th class="text-center">Funs Name</th>
+						<th class="text-center">Birth of Date</th>
+						<th class="text-center">#</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="user in users.list | filter:search">
+						<td><a href="" ng-click="showForm(user.id, $index);"
+							data-toggle="modal" data-target="#formUser"> {{user.name}} </a></td>
+						<td>{{user.dateOfBirthMills | date:'MM/dd/yyyy'}}</td>
+						<td><button ng-click="removeUser(user.id, $index);">
+								<span class="glyphicon glyphicon-remove" />
+							</button></td>
+					</tr>
+				</tbody>
+			</table>
+			<div ng-hide="users.list.length" class="alert alert-info">You
+				don't currently have any users, why not make one now?</div>
+		</div>
+	</div>
+	<div class="text-center">
+		<button class="btn btn-primary btn-lg" ng-click="showForm();"
+			data-toggle="modal" data-target="#formUser">&gt; Insert</button>
+	</div>
+</div>
+
+<div ng-include src="formUser"></div>
+
+

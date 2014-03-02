@@ -1,0 +1,233 @@
+/* Space out content a bit */
+body {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	font-family: Arial, Helvetica, "Nimbus Sans L", "Liberation Sans",
+		"FreeSans", sans-serif;
+	color: #000000;
+	font-weight: bold;
+	color: #000000;
+}
+
+input {
+	color: #000000;
+}
+
+a {
+	color: #000000;
+}
+
+a:hover,a:focus {
+	color: #cc006a;
+	text-decoration: underline;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,.user-form,.footer {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Custom page header */
+.header {
+	padding-bottom: 2px;
+	z-index: 2000;
+}
+/* Make the img heading the same height as the navigation */
+.header img {
+	height: 50px;
+}
+
+/* Sticky Footer */
+html,body {
+	height: 100%;
+}
+
+.wrapper,.wrapper .container {
+	width: 100%;
+}
+
+.wrapper.primary {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0px 0px -38px 0px;
+}
+
+.wrapper.secondary {
+	height: 38px;
+	padding: 20px 0px 0px 0px;
+}
+
+.wrapper.secondary footer {
+	height: 38px;
+}
+
+footer {
+	background-color: #007ec5;
+	color: #ffffff;
+	margin-top: 20px;
+}
+
+.background {
+	background-image: url('../images/alg.png');
+	overflow: hidden;
+}
+
+/* Customize container */
+@media ( min-width : 992px) {
+	.container {
+		max-width: 970px;
+	}
+}
+
+/* icon */
+.glyphicon {
+	color: rgb(213, 0, 109);
+}
+
+/* Main search */
+.searchbox {
+	text-align: center;
+	background-color: #007ec5;
+	padding: 2px;
+	color: white;
+	padding: 10px;
+	margin-bottom: 10%;
+}
+
+.searchbox input {
+	padding: 10px;
+	width: 40%;
+}
+
+.searchbox .glyphicon.glyphicon-search {
+	font-size: 2em;
+	top: 7px;
+}
+
+/* Panel */
+.panel.result {
+	-webkit-box-shadow: 3px 3px 24px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 3px 3px 24px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 3px 3px 24px 0px rgba(50, 50, 50, 0.75);
+}
+
+.panel-default.result {
+	border-color: #007ec5;
+}
+
+.result .panel-heading {
+	background-color: #007ec5;
+}
+
+.result .panel-title {
+	color: white;
+	font-weight: bold;
+}
+
+.alert-info {
+	color: white;
+	background-color: #007ec5;
+	border-color: #007ec5;
+}
+
+/* Table */
+th {
+	color: #007ec5;
+	border-bottom-color: #007ec5 !important;
+}
+
+/* button */
+.btn-primary {
+	background: rgb(213, 0, 109); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q1MDA2ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5NDA3NGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left, rgba(213, 0, 109, 1) 0%,
+		rgba(148, 7, 78, 1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(213, 0
+		, 109, 1)), color-stop(100%, rgba(148, 7, 78, 1)));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(213, 0, 109, 1) 0%,
+		rgba(148, 7, 78, 1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(213, 0, 109, 1) 0%,
+		rgba(148, 7, 78, 1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(213, 0, 109, 1) 0%,
+		rgba(148, 7, 78, 1) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(213, 0, 109, 1) 0%,
+		rgba(148, 7, 78, 1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5006d',
+		endColorstr='#94074e', GradientType=1); /* IE6-8 */
+	font-weight: bold;
+}
+
+/* Modal user-form content */
+.modal-header {
+	background-color: #007ec5;
+	border-bottom-color: white;
+}
+
+.modal-title {
+	color: white;
+	font-weight: bold;
+}
+
+.close {
+	color: white;
+	opacity: 1.0;
+	filter: alpha(opacity = 100);
+}
+
+.close:hover,.close:focus {
+	color: #cc006a;
+	opacity: 1.0;
+	filter: alpha(opacity = 100);
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+	/* Remove the padding we set earlier */
+	.header,.chart-form,.footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/* Space out the masthead */
+	.header {
+		margin-bottom: 20px;
+	}
+	/* Remove the bottom border on the jumbotron for visual effect */
+	.jumbotron {
+		border-bottom: 0;
+	}
+}
+
+/*validation*/
+input.ng-invalid {
+	border: 1px solid rgba(148, 7, 78, 1);
+}
+
+input.ng-valid {
+	border: 1px solid green;
+}
+
+/* ajax-loader */
+.ajax-loader {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	z-index: 3000;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	filter: alpha(opacity = 40);
+	background-color: #ffffff;
+}
+
+.ajax-loader img {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}

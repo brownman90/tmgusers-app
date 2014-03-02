@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>User Case</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+	<h:outputStylesheet name="css/style.css" />
+
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var contextRoot = '#{request.contextPath}';
+		/* ]]> */
+	</script>
+</h:head>
+<h:body>
+
+
+	<div id="container">
+		<p:ajaxStatus styleClass="ui-ajaxStatus-position" id="ajaxStatusPanel">
+			<f:facet name="start">
+				<p:graphicImage value="/resources/images/ajax-loader.gif" />
+			</f:facet>
+
+			<f:facet name="complete">
+				<h:outputText value="" />
+			</f:facet>
+		</p:ajaxStatus>
+		<div id="content">
+			<h:form>
+				<p:growl autoUpdate="true" widgetVar="growl" />
+			</h:form>
+			<ui:insert name="content">
+                    [Template content will be inserted here]
+         	</ui:insert>
+		</div>
+	</div>
+	<div id="footer">
+		<h:graphicImage value="/resources/images/logo.png" alt="Weld logo" />
+	</div>
+</h:body>
+</html>

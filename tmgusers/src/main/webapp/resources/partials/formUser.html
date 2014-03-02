@@ -1,0 +1,33 @@
+<div class="modal fade" id="formUser" tabindex="-1" role="dialog"
+	aria-labelledby="myUserForm" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="userFormTitle">User Details</h4>
+			</div>
+			<div class="modal-body text-center">
+				<form class="form-inline controls controls-row" role="form"
+					name="form" ng-submit="confirmUser()">
+					<input type="hidden" ng-model="selected" />
+					<div class="form-group">
+						<label class="sr-only" for="name">Name</label> <input type="text"
+							class="form-control" id="name" name="name"
+							placeholder="Enter Name" ng-model="userForm.name" required
+							ng-minlength=3 />
+
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="bod">Date of Birth</label> <input
+							type="text" class="form-control" id="dateOfBirthMills"
+							name="dateOfBirthMills" placeholder="BoD (MM/dd/YYYY)"
+							ng-model="userForm.dateOfBirthMills" required dateformat />
+					</div>
+					<button id="confirm" type="submit" class="btn btn-primary"
+						ng-disabled="form.$invalid">&gt; Confirm</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
