@@ -5,11 +5,11 @@ CRUD Users with AngularJS and Spring
 
 How to run a web app directly from the command line with jetty-runner: java -jar jetty-runner.jar tmgusers.war
 
-- Web Url: http://localhost:8080/
+- Web Url: http://localhost:8080/tmgusers
 - Url RESTful: 
-  - getting all users, GET : http://localhost:8080/usercase/api/user/list 
-  - get/delete user by id, GET/DELETE : http://localhost:8080/usercase/api/user?id={id}
-  - create/update user, POST/PUT : http://localhost:8080/usercase/api/us
+  - getting all users, GET : http://localhost:8080/tmgusers/api/user/list 
+  - get/delete user by id, GET/DELETE : http://localhost:8080/tmgusers/api/user?id={id}
+  - create/update user, POST/PUT : http://localhost:8080/tmgusers/api/us
 
 Tools and technologies used :
   - Eclipse Project with Maven.
